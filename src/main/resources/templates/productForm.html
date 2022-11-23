@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Voeg een nieuw product toe</title>
+  <link rel="stylesheet" type="text/css" href="/css/product.css"/>
+</head>
+<body>
+
+<h1>Maak een nieuw product aan</h1>
+
+<form th:action="@{/products/new}" method="post" th:object="${product}">
+    <input type="hidden" th:field="*{productId}">
+    <table>
+        <tr>
+            <td>Omschrijving</td>
+            <td><input type="text" th:field="*{productName}"></td>
+        </tr>
+        <tr>
+            <td>Prijs</td>
+            <td><input type="number" th:field="*{price}"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Sla product op">
+</form>
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package nl.makitwork.testproject.jessica.testProject;
+package nl.makeitwork.testproject.jessica.testProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
